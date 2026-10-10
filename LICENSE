@@ -1,0 +1,21 @@
+FacePing SDK licence
+Copyright (c) 2026 Wiretouch Ltd. All rights reserved.
+
+The FacePing SDK (the FacePing software development kits for .NET MAUI, Android and iOS, including the
+FacePing.Sdk and FacePing.Sdk.Maui NuGet packages, the ai.faceping:faceping-android Maven package and the FacePing
+Swift package, and the native core and face models bundled with them) is licensed, not sold. Wiretouch Ltd grants you a non-exclusive, non-transferable licence to use the SDK to build and
+run apps that work with your own FacePing account, under the terms for that account:
+
+  - sandbox accounts: https://faceping.ai/terms
+  - live accounts: your FacePing customer agreement
+
+You may include the SDK in apps you distribute to your users, as part of those apps. You may not sell or
+redistribute the SDK on its own, use it without a FacePing account, or remove these notices. You may not extract,
+copy or reverse engineer the SDK or its models, except where the law allows it.
+
+The SDK includes third-party components under their own licences: see THIRD-PARTY-NOTICES.txt.
+
+THE SDK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, TO THE EXTENT THE LAW ALLOWS. Your account's terms
+set out Wiretouch Ltd's responsibilities to you.
+
+Wiretouch Ltd, 71 Church Road, Hove, BN3 2BB, United Kingdom. support@faceping.ai
