@@ -12,18 +12,18 @@ In Xcode: **File → Add Package Dependencies…**, enter
 https://github.com/faceping/faceping-ios
 ```
 
-and choose version **1.0.0-preview.1**. It's a prerelease, so pick the dependency rule **Exact Version** `1.0.0-preview.1` (or **Up to Next Major Version** starting from `1.0.0-preview.1`; Xcode only offers prereleases when you type one in). Add the `FacePing` library to your app target.
+and choose version **1.0.0-preview.3**. It's a prerelease, so pick the dependency rule **Exact Version** `1.0.0-preview.3` (or **Up to Next Major Version** starting from `1.0.0-preview.3`; Xcode only offers prereleases when you type one in). Add the `FacePing` library to your app target.
 
 Or in a `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/faceping/faceping-ios", exact: "1.0.0-preview.1")
+.package(url: "https://github.com/faceping/faceping-ios", exact: "1.0.0-preview.3")
 ```
 
 Then:
 
 - Add `NSCameraUsageDescription` to your app's Info.plist (the live check uses the front camera).
-- Simulator builds need `EXCLUDED_ARCHS[sdk=iphonesimulator*] = x86_64`: the framework has Apple silicon simulator slices only. The simulator has no front camera, so test the live check on an iPhone.
+- The simulator has no front camera, so test the live check on an iPhone.
 
 ## Use it
 
@@ -32,8 +32,8 @@ import FacePing
 
 let faceping = try FacePing(sandboxKey: "fp_test_…")
 
-// Enrol once, on the device
-try await faceping.enrol(id: "me", photo: photo)
+// Add the face once, on the device
+try await faceping.enroll(id: "me", photo: photo)
 
 // Verify any time, with no network
 let result = try await faceping.verifyLive(id: "me", camera: cameraView)
