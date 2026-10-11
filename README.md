@@ -12,7 +12,7 @@ In Xcode: **File → Add Package Dependencies…**, enter
 https://github.com/faceping/faceping-ios
 ```
 
-and choose version **1.0.0-preview.3**. It's a prerelease, so pick the dependency rule **Exact Version** `1.0.0-preview.3` (or **Up to Next Major Version** starting from `1.0.0-preview.3`; Xcode only offers prereleases when you type one in). Add the `FacePing` library to your app target.
+and choose version **1.0.0-preview.3**. It's a prerelease, so pick the dependency rule **Exact Version** `1.0.0-preview.3`: while FacePing is in preview, each release may change the API, so update on purpose (Xcode only offers prereleases when you type one in). Add the `FacePing` library to your app target.
 
 Or in a `Package.swift`:
 
