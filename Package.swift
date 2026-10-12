@@ -12,8 +12,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "FacePing",
-            url: "https://github.com/faceping/faceping-ios/releases/download/1.0.0-preview.3/FacePing.xcframework.zip",
-            checksum: "4af127fc916827e1cbf19536ed325e7d4d45a7191d39da35bd4214c3c35ac7cb"
+            url: "https://github.com/faceping/faceping-ios/releases/download/1.0.0-preview.4/FacePing.xcframework.zip",
+            checksum: "87846f22419eb38d67fb556cd489d70e193ccdc69952a86c56d09ee07d9351ec"
         ),
     ]
 )
